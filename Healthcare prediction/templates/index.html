@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="content">
+        <h1 style="text-align:center">Healthcare Prediction</h1>
+        <div class="form">
+            <form action="/predict" method="POST">
+                <input type="number" name="weight" id = "weight" placeholder="Weight" step="any">
+                <input type="number" name="age" id = "age" placeholder="Age"><br><br>
+                <input type="number" name="BP_Upper" id = "BP_Upper" placeholder="BP_Upper">
+                <input type="number" name="BP_Lower" id = "BP_Lower" placeholder="BP_Lower"><br><br>
+                <input type="number" name="TSH" id = "TSH" placeholder="TSH" step="any">
+                <input type="number" name="Glucose_Fasting" id = "Glucose_Fasting" placeholder="Glucose_Fasting" step="any"><br><br>
+                <input type="number" name="Glucose_PP" id = "Glucose_PP" placeholder="Glucose_PP" step="any">
+                <input type="number" name="Cholestrol" id = "Cholestrol" placeholder="Cholestrol" step="any"><br><br>
+                <input type="number" name="Hb" id = "Hb" placeholder="Hb" step="any">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" title="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br><br>
+                <input type="submit" value="Predict Health Condition">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
